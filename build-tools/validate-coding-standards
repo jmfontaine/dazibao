@@ -1,0 +1,4 @@
+#!/bin/bash
+SCRIPT_PATH=$(cd ${0%/*}; pwd);
+ROOT_PATH=$SCRIPT_PATH/../
+phpcs --standard=Symfony2 $ROOT_PATH/app $ROOT_PATH/build-tools $ROOT_PATH/src $ROOT_PATH/web 

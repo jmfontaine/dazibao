@@ -1,0 +1,12 @@
+# Application
+app/config.php
+data/cache/*
+data/db/*
+
+# Eclipse
+.buildpath
+.project
+.settings
+
+# System
+.DS_Store

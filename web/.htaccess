@@ -1,0 +1,12 @@
+Options -MultiViews FollowSymLinks 
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Uncomment and modify next line to fit your configuration
+    #RewriteBase /path/to/app
+    RewriteBase /~jmf/dazibao/web/
+    
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^.*$ index.php [L]
+</IfModule>

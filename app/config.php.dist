@@ -1,0 +1,9 @@
+<?php
+// application debug mode
+$app['debug'] = false;
+
+// database
+$app['db.options'] = array(
+    'driver' => 'pdo_sqlite',
+    'path'   => __DIR__ . '/../data/db/projects.db',
+);

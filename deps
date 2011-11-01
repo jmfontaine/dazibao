@@ -1,0 +1,10 @@
+[doctrine-dbal]
+    git = https://github.com/doctrine/dbal.git
+[doctrine-common]
+    git = https://github.com/doctrine/common.git
+[silex]
+    git = https://github.com/fabpot/Silex.git
+[Symfony/Bridge/Twig]
+    git = https://github.com/symfony/TwigBridge.git
+[Symfony/Component/Validator]
+    git = https://github.com/symfony/Validator.git

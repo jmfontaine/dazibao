@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block title 'Projects' %}
+
+{% block content %}
+    {% if not projects %}
+        <p>No project yet.</p>
+    {% else %}
+        <ul id="projects">
+            {% for i, project in projects %}
+                <li>
+                    <a href="{{ path('project', { 'slug': project.slug }) }}">{{ project.name }}</a>
+               </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
